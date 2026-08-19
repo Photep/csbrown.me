@@ -10,7 +10,11 @@
       "workers_dev": true,
       "assets": {
         "directory": "./public"
-      }
+      },
+      "routes": [
+        { "pattern": "csbrown.me", "custom_domain": true },
+        { "pattern": "www.csbrown.me", "custom_domain": true }
+      ]
     }
   }
 }
