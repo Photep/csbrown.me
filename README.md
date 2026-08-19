@@ -11,7 +11,7 @@ Two Cloudflare Workers serve the same static assets from `./public`:
 | test | `csbrown-me` | https://csbrown-me.csbrown.workers.dev | Automatic on push to `main` and on pull requests |
 | production | `csbrown-me-prod` | csbrown.me | Manual promote only |
 
-There is no Worker script. Production is a separate worker so a promote can succeed before the csbrown.me zone is attached. `main` never deploys to production automatically.
+There is no Worker script. Production is a separate worker so a promote can succeed before the csbrown.me zone is attached. `main` never deploys to production automatically. Production custom domains are csbrown.me and www.csbrown.me via wrangler `custom_domain`.
 
 ## Deploy
 
